@@ -1,5 +1,5 @@
-const SongCard = () => (
-  <div>SongCard</div>
+const SongCard = ({ song }) => (
+  <div>{song}</div>
 );
 
 export default SongCard;
