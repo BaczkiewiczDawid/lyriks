@@ -32,12 +32,11 @@ const Discover = () => {
         {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((song, i) => (
           <SongCard key={song} song={song} i={i} />
         ))} */}
-        {data?.map((song) => {
+        {data?.map((song, i) => {
           console.log(song);
 
           return (
-            <SongCard song={song} />
-            // <h1>{song.title}</h1>
+            <SongCard song={song} key={song.key} i={i} />
           );
         })}
       </div>
